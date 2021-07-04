@@ -5,7 +5,7 @@ let getdata = (url, targetId, newsnumber) => {
     })
     .then(data => {
         let corrElement = document.getElementById(targetId);
-        console.log(data.articles[newsnumber]);
+        // console.log(data.articles[newsnumber]);
         let title = document.createElement('h4');
         title.innerText = data.articles[newsnumber].title;
         corrElement.appendChild(title);
